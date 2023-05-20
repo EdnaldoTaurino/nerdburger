@@ -1,0 +1,1 @@
+EU SOU FODA PRA KRL hsuahsuaidhafnaoufihwaoefijnawoeufhjao
