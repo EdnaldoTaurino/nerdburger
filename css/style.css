@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.h1topo {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #ff7f00;
+    text-transform: uppercase; /*Deixa todas as letras em maiusculo*/
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgb(245, 2, 2);/*Efeito de fogo atras das letras*/
+  }
+  
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+#menu ul {
+    background-color: #2c2c2c; /*Limitando tamanho do menu na tela ( apagar depois )*/
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    transition: 0.6s;
+    background-color: #ff0404; /*Depois mudar para palheta de cor do site*/
+    border-radius: 8px;
+    padding: 18px; /*Efeito no menu*/
+}
+
+#menu .sub-menu-items {
+    display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+    background-color: #000000e8;
+    color: white;
+}
+  
+#menu .sub-menu:hover .sub-menu-items {
+    display: block;
+}
+  
+.login {
+    margin-left: auto;
+
+}
+
+h1{
+    margin-top: 100px;
+    text-indent: 10px;
+}
