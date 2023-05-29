@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerd Burger Hamburgueria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+  <title>Hamburgueria - Cardápio</title>
+</head>
+<body>
+  <h1>Hamburgueria - Cardápio</h1>
+  <div class="cardapio">
+    <div class="cardapio-column">
+      <div class="item" onclick="adicionarItem('Hambúrguer Cheese', 10)">
+        <img src="hamburguer.png" alt="Hambúrguer Cheese">
+        Hambúrguer Cheese - R$10
+      </div>
+      <div class="item" onclick="adicionarItem('Batatas Fritas', 5)">
+        <img src="batatas.png" alt="Batatas Fritas">
+        Batatas Fritas - R$5
+      </div>
+      <div class="item" onclick="adicionarItem('Refrigerante', 3)">
+        <img src="refrigerante.png" alt="Refrigerante">
+        Refrigerante - R$3
+      </div>
+    </div>
+    <div class="cardapio-column">
+      <div class="item" onclick="adicionarItem('Hambúrguer Vegetariano', 8)">
+        <img src="vegetariano.png" alt="Hambúrguer Vegetariano">
+        Hambúrguer Vegetariano - R$8
+      </div>
+      <div class="item" onclick="adicionarItem('Salada', 4)">
+        <img src="salada.png" alt="Salada">
+        Salada - R$4
+      </div>
+      <div class="item" onclick="adicionarItem('Chá Gelado', 2)">
+        <img src="cha.png" alt="Chá Gelado">
+        Chá Gelado - R$2
+      </div>
+      <div class="item" onclick="adicionarItem('Sorvete', 6)">
+        <img src="sorvete.png" alt="Sorvete">
+        Sorvete - R$6
+      </div>
+    </div>
+  </div>
+
+  <div class="sacola">
+    <h2>Sacola</h2>
+    <ul id="itens-sacola"></ul>
+  </div>
+
+  <div class="fazer-pedido">
+    <button onclick="fazerPedido()">Fazer Pedido</button>
+  </div>
+
+  <div class="total" id="total"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
