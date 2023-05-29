@@ -27,3 +27,17 @@ function fazerPedido() {
     alert('A sacola está vazia. Adicione itens antes de fazer o pedido.');
   }
 }
+
+function exibirImagem(src) {
+  var imagemPopup = document.getElementById('imagem-popup');
+  var imagemPopupImg = document.getElementById('imagem-popup-img');
+  imagemPopup.style.display = 'flex';
+  imagemPopupImg.src = src;
+}
+
+function fecharImagem() {
+  var imagemPopup = document.getElementById('imagem-popup');
+  var imagemPopupImg = document.getElementById('imagem-popup-img');
+  imagemPopup.style.display = 'none';
+  imagemPopupImg.src = '';
+}

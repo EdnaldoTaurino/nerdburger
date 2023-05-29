@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--Falta concertar o menu com fotos e outras melhorias-->
+<!DOCTYPE html> <!--Falta concertar o menu com fotos e outras melhorias--><!--Adicionar menu principal-->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -9,37 +9,38 @@
   <title>Hamburgueria - Cardápio</title>
 </head>
 <body>
-  <h1>Hamburgueria - Cardápio</h1>
+  <h1>Nerd Burger - Cardápio</h1>
+  
   <div class="cardapio">
     <div class="cardapio-column">
       <div class="item" onclick="adicionarItem('Hambúrguer Cheese', 10)">
-        <img src="hamburguer.png" alt="Hambúrguer Cheese">
+        <img src="../img/Hamburger com batata 4.jpeg" alt="Hambúrguer Cheese" onclick="exibirImagem('../img/Hamburger com batata 4.jpeg')">
         Hambúrguer Cheese - R$10
       </div>
       <div class="item" onclick="adicionarItem('Batatas Fritas', 5)">
-        <img src="batatas.png" alt="Batatas Fritas">
+        <img src="batatas.png" alt="Batatas Fritas" onclick="exibirImagem('batatas.png')">
         Batatas Fritas - R$5
       </div>
       <div class="item" onclick="adicionarItem('Refrigerante', 3)">
-        <img src="refrigerante.png" alt="Refrigerante">
+        <img src="refrigerante.png" alt="Refrigerante" onclick="exibirImagem('refrigerante.png')">
         Refrigerante - R$3
       </div>
     </div>
     <div class="cardapio-column">
       <div class="item" onclick="adicionarItem('Hambúrguer Vegetariano', 8)">
-        <img src="vegetariano.png" alt="Hambúrguer Vegetariano">
+        <img src="vegetariano.png" alt="Hambúrguer Vegetariano" onclick="exibirImagem('vegetariano.png')">
         Hambúrguer Vegetariano - R$8
       </div>
       <div class="item" onclick="adicionarItem('Salada', 4)">
-        <img src="salada.png" alt="Salada">
+        <img src="salada.png" alt="Salada" onclick="exibirImagem('salada.png')">
         Salada - R$4
       </div>
       <div class="item" onclick="adicionarItem('Chá Gelado', 2)">
-        <img src="cha.png" alt="Chá Gelado">
+        <img src="cha.png" alt="Chá Gelado" onclick="exibirImagem('cha.png')">
         Chá Gelado - R$2
       </div>
       <div class="item" onclick="adicionarItem('Sorvete', 6)">
-        <img src="sorvete.png" alt="Sorvete">
+        <img src="sorvete.png" alt="Sorvete" onclick="exibirImagem('sorvete.png')">
         Sorvete - R$6
       </div>
     </div>
@@ -55,6 +56,11 @@
   </div>
 
   <div class="total" id="total"></div>
+
+  <div id="imagem-popup" onclick="fecharImagem()">
+    <img id="imagem-popup-img" src="" alt="">
+    <button id="imagem-popup-fechar" onclick="fecharImagem()">Fechar</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
