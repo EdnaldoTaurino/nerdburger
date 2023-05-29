@@ -72,3 +72,74 @@ h1{
     margin-top: 100px;
     text-indent: 10px;
 }
+
+/*---------------------------------------MENU LATERAL---------------------------*/
+
+   /*MENU LATERAL*/
+
+aside{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.sidebar-box {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 25pt;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    transition: all 0.4s ease;
+    
+}
+
+.sidebar-box-content {
+    padding: 10px;   /*div separada pois o padding no sidebar-box fazia não esconder a barra lateral corretamente*/
+}
+
+.sidebar-txt {
+    margin-top: 35px;
+    border: 0.5px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar-txt:hover{
+    background-color: rgb(184, 184, 184);
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
+#txt-placeholder {
+    font-size: 30pt;
+    border: none;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    padding: 10px;
+}
+
+.sidebar-button {
+    display: flex;
+    top: 0;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*Essas classes são para o JS alterar dinamicamente entre as propriedades normais aplicadas nas classes e as de ocultar, escondendo a barra lateral */
+.hidden {
+    width: 0px;
+}
+
+.hidden .txt {
+    display: none;
+}
+
+.hidden .sidebar-box-content {
+    display: none;
+}
