@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 100%;
+}
+.h1topo {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #ff7f00;
+    text-transform: uppercase; /*Deixa todas as letras em maiusculo*/
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgb(245, 2, 2);/*Efeito de fogo atras das letras*/
+}
+  
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin-right: 200px;
+}
+
+#menu ul {
+    background-color: #2c2c2c; /*Limitando tamanho do menu na tela ( apagar depois )*/
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    transition: 0.6s;
+    background-color: #ff0404; /*Depois mudar para palheta de cor do site*/
+    border-radius: 8px;
+    padding: 18px; /*Efeito no menu*/
+}
+
+#menu .sub-menu-items {
+    display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+    background-color: #000000e8;
+    color: white;
+}
+  
+#menu .sub-menu:hover .sub-menu-items {
+    display: block;
+}
+  
+.login {
+    margin-left: auto;
+}
+
+h1{
+    margin-top: 100px;
+    text-indent: 10px;
+}
+    /*MENU LATERAL*/
+
+aside{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.sidebar-box {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 25pt;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    transition: all 0.4s ease;
+    
+}
+
+.sidebar-box-content {
+    padding: 10px;         /*div separada pois o padding no sidebar-box fazia não esconder a barra lateral corretamente*/
+}
+
+.sidebar-txt {
+    margin-top: 35px;
+    border: 0.5px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar-txt:hover{
+    background-color: rgb(184, 184, 184);
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
+#txt-placeholder {
+    font-size: 30pt;
+    border: none;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    padding: 10px;
+}
+
+
+.sidebar-button {
+    display: flex;
+    top: 0;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*Essas classes são para o JS alterar dinamicamente entre as propriedades normais aplicadas nas classes e as de ocultar, escondendo a barra lateral */
+.hidden {
+    width: 0px;
+}
+
+.hidden .txt {
+    display: none;
+}
+
+.hidden .sidebar-box-content {
+    display: none;
+}
