@@ -3,11 +3,10 @@
 body {
     margin: 0;
     padding: 0;
-    border: 0;
     background-color: rgb(0, 0, 0);
     color: white;
-    height: 100%;
 }
+
 .h1topo {
     text-align: center;
     font-family: "Arial", sans-serif;
@@ -16,19 +15,30 @@ body {
     text-transform: uppercase; /*Deixa todas as letras em maiusculo*/
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgb(245, 2, 2);/*Efeito de fogo atras das letras*/
-}
+  }
   
 #menu {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
-    margin-right: 200px;
+}
+
+.menuInicio, .menuMenu, .menuMyorders {
+    margin-right: 10px;
+    background-color: #BC1823;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+.menuContact, .menuDelivery {
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
 }
 
 #menu ul {
-    background-color: #2c2c2c; /*Limitando tamanho do menu na tela ( apagar depois )*/
-    border-radius: 5px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -48,35 +58,41 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+/*---------------------------------------*/
 #menu li a:hover {
     transition: 0.6s;
-    background-color: #ff0404; /*Depois mudar para palheta de cor do site*/
-    border-radius: 8px;
     padding: 18px; /*Efeito no menu*/
+}
+/*---------------------------------------*/
+.sub-menu{
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 10px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border-radius: 30px;
 }
 
 #menu .sub-menu-items {
     display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
-    background-color: #000000e8;
-    color: white;
+    color: rgb(3, 3, 3); /*Cor do sub menu*/
+    background-color:#BC1823;
+    
 }
   
 #menu .sub-menu:hover .sub-menu-items {
-    display: block;
-}
-  
-.login {
-    margin-left: auto;
+    display:flex; /* Concerta o menu entrar e cadastro*/
 }
 
-h1{
+h1 {
     margin-top: 100px;
     text-indent: 10px;
 }
-    /*MENU LATERAL*/
 
-aside{
+/*---------------------------------------MENU LATERAL---------------------------*/
+
+   /*MENU LATERAL*/
+
+aside {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -97,7 +113,7 @@ aside{
 }
 
 .sidebar-box-content {
-    padding: 10px;         /*div separada pois o padding no sidebar-box fazia não esconder a barra lateral corretamente*/
+    padding: 10px;   /*div separada pois o padding no sidebar-box fazia não esconder a barra lateral corretamente*/
 }
 
 .sidebar-txt {
@@ -107,7 +123,7 @@ aside{
     padding: 10px;
     cursor: pointer;
 }
-.sidebar-txt:hover{
+.sidebar-txt:hover {
     background-color: rgb(184, 184, 184);
     transition: 0.2s;
     transform: scale(0.9);
@@ -120,7 +136,6 @@ aside{
     border-top: 0.5px solid black;
     padding: 10px;
 }
-
 
 .sidebar-button {
     display: flex;
