@@ -3,19 +3,41 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    border: 0;
     color: white;
 }
 
-.h1topo {
+.sessao1 {
+    display: flex;
+    background-color: black;
+}
+
+.sessao2 {
+    display: flex;
+    background-color: #ff0404;
+}
+
+.sessao3 {
+    background-color: rgb(225, 228, 228);
+    color: black;
+}
+
+.sessao4 {
+    background-color: #c20b0b;
     text-align: center;
-    font-family: "Arial", sans-serif;
-    font-size: 40px;
-    color: #ff7f00;
-    text-transform: uppercase; /*Deixa todas as letras em maiusculo*/
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgb(245, 2, 2);/*Efeito de fogo atras das letras*/
-  }
+}
+
+.sessao4-1 {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.sessao5 {
+    display: flex;
+    background-color: black;
+}
   
 #menu {
     position: fixed;
