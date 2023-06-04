@@ -4,27 +4,72 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    color: white;
 }
 
 .sessao1 {
     display: flex;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+}
+
+.sessao1-texto{
+    margin: auto;
+    color: white;
+
+}
+
+.sessao1-img{
+    margin: auto;
+    margin-top: 10px;
+}
+
+.sessao1 button {
+    border: black;
+    border-radius: 50px;
+    background-color: rgb(255, 196, 1);
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.sessao1 img {
+    padding-top: 7%;
+    padding-left: auto;
 }
 
 .sessao2 {
     display: flex;
-    background-color: #ff0404;
+    background-color: #b41e1e;
+    color: white;
+    
+}
+
+.sessao2-texto {
+    margin: auto;
+}
+
+.sessao2-img {
+    margin: auto;
+}
+
+.sessao2 button {
+    border: black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .sessao3 {
     background-color: rgb(225, 228, 228);
-    color: black;
 }
 
 .sessao4 {
     background-color: #c20b0b;
     text-align: center;
+    color: white;
 }
 
 .sessao4-1 {
