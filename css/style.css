@@ -35,8 +35,7 @@ body {
 .sessao2 {
     display: flex;
     background-color: #b41e1e;
-    color: white;
-    
+    color: white; 
 }
 
 .sessao2-texto {
@@ -58,7 +57,14 @@ body {
 }
 
 .sessao3 {
-    background-color: rgb(90, 13, 245);
+    background-color: rgb(238, 234, 234);
+    text-align: center;
+}
+
+.sessao3-1 {
+    display: flex;
+    text-align: center;
+    padding: 20px;
 }
 
 .sessao3 h1 {
@@ -70,13 +76,14 @@ body {
 }
 
 .sessao4 {
-    background-color: #c20b0b;
+    background-color: #b41e1e;
     text-align: center;
     color: white;
 }
 
 .sessao4 h1 {
     margin: 0;
+    padding: 80px;
 }
 
 .sessao4-1 {
@@ -96,6 +103,7 @@ body {
 .sessao5 {
     display: flex;
     background-color: black;
+    color: white;
 }
   
 #menu {
