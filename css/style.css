@@ -19,7 +19,7 @@ body {
 
 .sessao1-img{
     margin: auto;
-    margin-top: 10px;
+    margin-top: 55px;
 }
 
 .sessao1 button {
@@ -30,11 +30,6 @@ body {
     padding: 20px;
     padding-left: 35px;
     padding-right: 35px;
-}
-
-.sessao1 img {
-    padding-top: 7%;
-    padding-left: auto;
 }
 
 .sessao2 {
@@ -63,7 +58,15 @@ body {
 }
 
 .sessao3 {
-    background-color: rgb(225, 228, 228);
+    background-color: rgb(90, 13, 245);
+}
+
+.sessao3 h1 {
+    margin: 0;
+}
+
+.sessao3 p {
+    margin: 0;
 }
 
 .sessao4 {
@@ -72,11 +75,22 @@ body {
     color: white;
 }
 
+.sessao4 h1 {
+    margin: 0;
+}
+
 .sessao4-1 {
     display: flex;
     text-align: center;
     padding: 20px;
     
+}
+
+.sessao4-1 div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sessao5 {
