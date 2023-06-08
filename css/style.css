@@ -4,27 +4,79 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    color: white;
 }
 
 .sessao1 {
     display: flex;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+}
+
+.sessao1-texto{
+    margin: auto;
+    color: white;
+
+}
+
+.sessao1-img{
+    margin: auto;
+    margin-top: 55px;
+}
+
+.sessao1 button {
+    border: black;
+    border-radius: 50px;
+    background-color: rgb(255, 196, 1);
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .sessao2 {
     display: flex;
-    background-color: #ff0404;
+    background-color: #b41e1e;
+    color: white;
+    
+}
+
+.sessao2-texto {
+    margin: auto;
+}
+
+.sessao2-img {
+    margin: auto;
+}
+
+.sessao2 button {
+    border: black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .sessao3 {
-    background-color: rgb(225, 228, 228);
-    color: black;
+    background-color: rgb(90, 13, 245);
+}
+
+.sessao3 h1 {
+    margin: 0;
+}
+
+.sessao3 p {
+    margin: 0;
 }
 
 .sessao4 {
     background-color: #c20b0b;
     text-align: center;
+    color: white;
+}
+
+.sessao4 h1 {
+    margin: 0;
 }
 
 .sessao4-1 {
@@ -32,6 +84,13 @@ body {
     text-align: center;
     padding: 20px;
     
+}
+
+.sessao4-1 div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .sessao5 {
@@ -103,11 +162,6 @@ body {
   
 #menu .sub-menu:hover .sub-menu-items {
     display:flex; /* Concerta o menu entrar e cadastro*/
-}
-
-h1 {
-    margin-top: 100px;
-    text-indent: 10px;
 }
 
 /*---------------------------------------MENU LATERAL---------------------------*/
