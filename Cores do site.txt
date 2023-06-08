@@ -1,4 +1,0 @@
-https://color.adobe.com/pt/create/image detecta cores das imagens
-
-#BC1823 vermelho menu
-#FAB819 laranja menu 
