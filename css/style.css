@@ -36,6 +36,10 @@ body {
     display: flex;
     background-color: #b41e1e;
     color: white; 
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
 }
 
 .sessao2-texto {
@@ -59,26 +63,60 @@ body {
 .sessao3 {
     background-color: rgb(238, 234, 234);
     text-align: center;
+    padding: 5%;
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px ;
+}
+
+.sessao3 button {
+    border: black;
+    border-radius: 50px;
+    background-color: #b41e1e;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 20px;
 }
 
 .sessao3-1 {
     display: flex;
     text-align: center;
     padding: 20px;
+    justify-content: space-aro;
+}
+
+.sessao3-imagens {
+    border: rgb(255, 255, 255) solid;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 
 .sessao3 h1 {
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .sessao3 p {
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .sessao4 {
     background-color: #b41e1e;
     text-align: center;
     color: white;
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
 }
 
 .sessao4 h1 {
@@ -94,7 +132,6 @@ body {
 }
 
 .sessao4-1 div {
-    padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 7%;
     padding-right: 7%;
@@ -104,6 +141,9 @@ body {
     display: flex;
     background-color: black;
     color: white;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
 }
   
 #menu {
