@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.sessao1 {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.sessao1-texto{
+    margin: auto;
+    color: white;
+    text-align: center;
+
+}
+
+.sessao1-img{
+    margin: auto;
+    margin-top: 55px;
+}
+
+.sessao1 button {
+    border: black;
+    border-radius: 50px;
+    background-color: rgb(255, 196, 1);
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.sessao2 {
+    display: flex;
+    background-color: #b41e1e;
+    color: white; 
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
+}
+
+.sessao2-texto {
+    margin: auto;
+}
+
+.sessao2-img {
+    margin: auto;
+}
+
+.sessao2 button {
+    font-size: 20px;
+    border: black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.sessao3 {
+    background-color: rgb(238, 234, 234);
+    text-align: center;
+    padding: 5%;
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px ;
+}
+
+.sessao3 button {
+    font-size: 20px;
+    border: black;
+    border-radius: 50px;
+    background-color: #b41e1e;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 50px;
+}
+
+.sessao3-1 {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.sessao3-imagens {
+    border: rgb(255, 255, 255) solid;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.sessao3 h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.sessao3 p {
+    margin: 0;
+    padding-top: 25px;
+}
+
+.sessao4 {
+    background-color: #b41e1e;
+    text-align: center;
+    color: white;
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
+}
+
+.sessao4 h1 {
+    margin: 0;
+    padding: 80px;
+}
+
+.sessao4-1 {
+    display: flex;
+}
+
+.sessao4-1 div {
+    padding-left: 7%;
+    padding-right: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao4-1 div .icone {
+    padding-left: 50px;
+}
+
+.sessao5 {
+    display: flex;
+    color: white;
+    margin: 20px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow:#b41e1e 10px 5px 10px;
+    font-size: 25px;
+}
+
+.sessao5 .icones {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;    
+}
+
+.sessao5 .icones div {
+    padding-left: 100px;
+}
+
+.sessao5 img {
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 45px;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 200px;
+}
+  
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.menuInicio, .menuMenu, .menuMyorders {
+    margin-right: 10px;
+    background-color: #BC1823;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+.menuContact, .menuDelivery {
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*---------------------------------------*/
+#menu li a:hover {
+    transition: 0.6s;
+    padding: 18px; /*Efeito no menu*/
+}
+/*---------------------------------------*/
+.sub-menu{
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 10px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border-radius: 30px;
+}
+
+#menu .sub-menu-items {
+    display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+    color: rgb(3, 3, 3); /*Cor do sub menu*/
+    background-color:#BC1823;
+    
+}
+  
+#menu .sub-menu:hover .sub-menu-items {
+    display:flex; /* Concerta o menu entrar e cadastro*/
+}
+
+/*---------------------------------------MENU LATERAL---------------------------*/
+
+   /*MENU LATERAL*/
+
+aside {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+.sidebar-box {
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 25pt;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    transition: all 0.4s ease;
+    
+}
+
+.sidebar-box-content {
+    padding: 10px;   /*div separada pois o padding no sidebar-box fazia não esconder a barra lateral corretamente*/
+}
+
+.sidebar-txt {
+    margin-top: 35px;
+    border: 0.5px solid black; 
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar-txt:hover {
+    background-color: rgb(184, 184, 184);
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
+#txt-placeholder {
+    font-size: 30pt;
+    border: none;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    padding: 10px;
+}
+
+.sidebar-button {
+    display: flex;
+    top: 0;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*Essas classes são para o JS alterar dinamicamente entre as propriedades normais aplicadas nas classes e as de ocultar, escondendo a barra lateral */
+.hidden {
+    width: 0px;
+}
+
+.hidden .txt {
+    display: none;
+}
+
+.hidden .sidebar-box-content {
+    display: none;
+}
