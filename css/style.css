@@ -6,6 +6,10 @@ body {
     border: 0;
 }
 
+h1 {
+    font-size: 80px;
+}
+
 .sessao1 {
     display: flex;
     background-color: rgb(0, 0, 0);
@@ -14,6 +18,7 @@ body {
 .sessao1-texto{
     margin: auto;
     color: white;
+    text-align: center;
 
 }
 
@@ -35,8 +40,11 @@ body {
 .sessao2 {
     display: flex;
     background-color: #b41e1e;
-    color: white;
-    
+    color: white; 
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
 }
 
 .sessao2-texto {
@@ -48,6 +56,7 @@ body {
 }
 
 .sessao2 button {
+    font-size: 20px;
     border: black;
     border-radius: 50px;
     background-color: black;
@@ -55,47 +64,120 @@ body {
     padding: 20px;
     padding-left: 35px;
     padding-right: 35px;
+    margin-left: 300px;
+    margin-top: 20px;
 }
 
 .sessao3 {
-    background-color: rgb(90, 13, 245);
+    background-color: rgb(238, 234, 234);
+    text-align: center;
+    padding: 5%;
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px ;
+}
+
+.sessao3 button {
+    font-size: 20px;
+    border: black;
+    border-radius: 50px;
+    background-color: #b41e1e;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 50px;
+}
+
+.sessao3-1 {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.sessao3-imagens {
+    border: rgb(255, 255, 255) solid;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 
 .sessao3 h1 {
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .sessao3 p {
     margin: 0;
+    padding-top: 25px;
 }
 
 .sessao4 {
-    background-color: #c20b0b;
+    background-color: #b41e1e;
     text-align: center;
     color: white;
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
 }
 
 .sessao4 h1 {
     margin: 0;
+    padding: 80px;
 }
 
 .sessao4-1 {
     display: flex;
-    text-align: center;
-    padding: 20px;
-    
 }
 
 .sessao4-1 div {
-    padding-top: 15px;
-    padding-bottom: 15px;
     padding-left: 7%;
     padding-right: 7%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao4-1 div .icone {
+    padding-left: 50px;
 }
 
 .sessao5 {
     display: flex;
+    color: white;
+    margin: 20px;
     background-color: black;
+    border-radius: 20px;
+    box-shadow:#b41e1e 10px 5px 10px;
+    font-size: 25px;
+}
+
+.sessao5 .icones {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;    
+}
+
+.sessao5 .icones div {
+    padding-left: 100px;
+}
+
+.sessao5 img {
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 45px;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 200px;
 }
   
 #menu {
