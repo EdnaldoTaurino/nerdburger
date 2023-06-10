@@ -3,6 +3,10 @@
   font-family: Adlery-pro;
   src: url(../assets/Fontes/adlery-pro.ttf);
 }
+@font-face {
+    font-family: benedict;
+    src: url(../assets/Fontes/Benedict.ttf);
+}
 
 body {
     margin: 0;
@@ -23,7 +27,8 @@ h1 {
 }
 
 .h2top{
-    font-family: adlery-pro;
+    font-family: benedict;
+    font-size: 35px;
     margin-left: 100px;
     margin-top: -40px;
 }
@@ -166,11 +171,11 @@ h1 {
 
 .sessao5 {
     display: flex;
-    color: white;
+    color: rgb(7, 0, 0);
     margin: 20px;
-    background-color: black;
+    background-color: #FAB819;
     border-radius: 20px;
-    box-shadow:#b41e1e 10px 5px 10px;
+    box-shadow:#020000 10px 5px 10px;
     font-size: 25px;
 }
 
@@ -192,7 +197,7 @@ h1 {
 
 .rodape {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 200px;
 }
 /*------------------------INICIO DO MENU--------------------------*/
@@ -272,6 +277,7 @@ aside {
     top: 0px;
     left: 0px;
     display: flex;
+    
 }
 
 .sidebar-box {

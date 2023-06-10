@@ -24,7 +24,7 @@ body {
   display: flex;
 }
 
-.menuInicio, .menuMenu, .menuMyorders {
+.menuInicio, .menuMenu {
   margin-right: 10px;
   background-color: #BC1823;
   border-radius: 30px;

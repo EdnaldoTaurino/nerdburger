@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: red;
+    background-color: #BC1823;
     background-image: url(../../img/Imagens\ prototipo/background.png);
     background-size: auto;
     display: flex;
@@ -21,18 +21,20 @@ body {
     display: flex;
 }
 
-.menuInicio, .menuMenu, .menuMyorders {
+.menuInicio, .menuMenu {
     margin-right: 10px;
     background-color: #BC1823;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
+    border: black solid 1px;
 }
 
-.menuContact, .menuDelivery {
+.menuContact {
     margin-right: 10px;
     background-color: #FAB819;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
+    border: black solid 1px;
 }
 
 #menu ul {

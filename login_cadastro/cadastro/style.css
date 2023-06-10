@@ -1,3 +1,9 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Adlery-pro;
+  src: url(../../assets/Fontes/adlery-pro.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +25,14 @@ body {
     display: flex;
 }
 
-.menuInicio, .menuMenu, .menuMyorders {
+.menuInicio, .menuMenu {
     margin-right: 10px;
     background-color: #BC1823;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
 }
 
-.menuContact, .menuDelivery {
+.menuContact {
     margin-right: 10px;
     background-color: #FAB819;
     border-radius: 30px;
@@ -90,11 +96,13 @@ body {
 .txt1 {
     font-size: 60pt;
     color: white;
+    font-family: adlery-pro;
 }
 
 .txt2 {
     font-size: 30pt;
     color: red;
+    font-family: adlery-pro;
 }
 
 .img-logo {
@@ -128,11 +136,13 @@ body {
 .cadastro-text {
     font-size: 50pt;
     color: white;
+    font-family: adlery-pro;
 }
 
 .login-link{
     margin-bottom: 40px;
     color: white;
+    
 }
 
 .login-link a {
@@ -214,6 +224,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+
 }
 
 .senha-box label {
