@@ -19,7 +19,6 @@ h1 {
     margin: auto;
     color: white;
     text-align: center;
-
 }
 
 .sessao1-img{
@@ -105,7 +104,6 @@ h1 {
     margin-right: 5%;
     padding-top: 60px;
     padding-bottom: 60px;
-    
 }
 
 .sessao3 h1 {
@@ -179,7 +177,7 @@ h1 {
     font-size: 15px;
     margin-left: 200px;
 }
-  
+/*------------------------INICIO DO MENU--------------------------*/
 #menu {
     position: fixed;
     top: 0;
@@ -239,14 +237,15 @@ h1 {
     display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
     color: rgb(3, 3, 3); /*Cor do sub menu*/
     background-color:#BC1823;
-    
 }
   
 #menu .sub-menu:hover .sub-menu-items {
     display:flex; /* Concerta o menu entrar e cadastro*/
 }
 
-/*---------------------------------------MENU LATERAL---------------------------*/
+/*------------------------Final do menu--------------------------*/
+
+/*---------------------------------------MENU LATERAL - Inicio---------------------------*/
 
    /*MENU LATERAL*/
 
@@ -266,8 +265,7 @@ aside {
     text-align: center;
     margin: 0;
     padding: 0px;
-    transition: all 0.4s ease;
-    
+    transition: all 0.4s ease; 
 }
 
 .sidebar-box-content {
@@ -281,6 +279,7 @@ aside {
     padding: 10px;
     cursor: pointer;
 }
+
 .sidebar-txt:hover {
     background-color: rgb(184, 184, 184);
     transition: 0.2s;
@@ -316,3 +315,4 @@ aside {
 .hidden .sidebar-box-content {
     display: none;
 }
+/*------------------------MENU LATERAL FINAL--------------------------*/
