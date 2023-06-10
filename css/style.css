@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Adlery-pro;
+  src: url(../assets/Fontes/adlery-pro.ttf);
+}
+@font-face {
+    font-family: benedict;
+    src: url(../assets/Fontes/Benedict.ttf);
+}
 
 body {
     margin: 0;
@@ -6,8 +14,23 @@ body {
     border: 0;
 }
 
+.logo {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
 h1 {
     font-size: 80px;
+    font-family: adlery-pro;
+    letter-spacing: 2px;
+}
+
+.h2top{
+    font-family: benedict;
+    font-size: 35px;
+    margin-left: 100px;
+    margin-top: -40px;
 }
 
 .sessao1 {
@@ -19,7 +42,6 @@ h1 {
     margin: auto;
     color: white;
     text-align: center;
-
 }
 
 .sessao1-img{
@@ -105,7 +127,6 @@ h1 {
     margin-right: 5%;
     padding-top: 60px;
     padding-bottom: 60px;
-    
 }
 
 .sessao3 h1 {
@@ -150,11 +171,11 @@ h1 {
 
 .sessao5 {
     display: flex;
-    color: white;
+    color: rgb(7, 0, 0);
     margin: 20px;
-    background-color: black;
+    background-color: #FAB819;
     border-radius: 20px;
-    box-shadow:#b41e1e 10px 5px 10px;
+    box-shadow:#020000 10px 5px 10px;
     font-size: 25px;
 }
 
@@ -176,10 +197,10 @@ h1 {
 
 .rodape {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 200px;
 }
-  
+/*------------------------INICIO DO MENU--------------------------*/
 #menu {
     position: fixed;
     top: 0;
@@ -187,14 +208,14 @@ h1 {
     display: flex;
 }
 
-.menuInicio, .menuMenu, .menuMyorders {
+.menuInicio, .menuMenu {
     margin-right: 10px;
     background-color: #BC1823;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
 }
 
-.menuContact, .menuDelivery {
+.menuContact {
     margin-right: 10px;
     background-color: #FAB819;
     border-radius: 30px;
@@ -239,14 +260,15 @@ h1 {
     display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
     color: rgb(3, 3, 3); /*Cor do sub menu*/
     background-color:#BC1823;
-    
 }
   
 #menu .sub-menu:hover .sub-menu-items {
     display:flex; /* Concerta o menu entrar e cadastro*/
 }
 
-/*---------------------------------------MENU LATERAL---------------------------*/
+/*------------------------Final do menu--------------------------*/
+
+/*---------------------------------------MENU LATERAL - Inicio---------------------------*/
 
    /*MENU LATERAL*/
 
@@ -255,6 +277,7 @@ aside {
     top: 0px;
     left: 0px;
     display: flex;
+    
 }
 
 .sidebar-box {
@@ -266,8 +289,7 @@ aside {
     text-align: center;
     margin: 0;
     padding: 0px;
-    transition: all 0.4s ease;
-    
+    transition: all 0.4s ease; 
 }
 
 .sidebar-box-content {
@@ -281,6 +303,7 @@ aside {
     padding: 10px;
     cursor: pointer;
 }
+
 .sidebar-txt:hover {
     background-color: rgb(184, 184, 184);
     transition: 0.2s;
@@ -316,3 +339,4 @@ aside {
 .hidden .sidebar-box-content {
     display: none;
 }
+/*------------------------MENU LATERAL FINAL--------------------------*/
