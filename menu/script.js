@@ -23,6 +23,7 @@ function atualizarTotal() {
 function fazerPedido() {
   if (total > 0) {
     alert('Pedido realizado! Total: R$' + total.toFixed(2));
+    window.location.href = 'obrigado.html'; // Redireciona para a página de "obrigado.html"
   } else {
     alert('A sacola está vazia. Adicione itens antes de fazer o pedido.');
   }
