@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Adlery-pro;
+  src: url(../assets/Fontes/adlery-pro.ttf);
+}
 
 body {
     margin: 0;
@@ -6,8 +10,22 @@ body {
     border: 0;
 }
 
+.logo {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
 h1 {
     font-size: 80px;
+    font-family: adlery-pro;
+    letter-spacing: 2px;
+}
+
+.h2top{
+    font-family: adlery-pro;
+    margin-left: 100px;
+    margin-top: -40px;
 }
 
 .sessao1 {
@@ -185,14 +203,14 @@ h1 {
     display: flex;
 }
 
-.menuInicio, .menuMenu, .menuMyorders {
+.menuInicio, .menuMenu {
     margin-right: 10px;
     background-color: #BC1823;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
 }
 
-.menuContact, .menuDelivery {
+.menuContact {
     margin-right: 10px;
     background-color: #FAB819;
     border-radius: 30px;

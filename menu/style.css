@@ -31,7 +31,7 @@ body {
   letter-spacing: 2px; /*Espaçamento das letras*/
 }
 
-.menuContact, .menuDelivery {
+.menuContact {
   margin-right: 10px;
   background-color: var(--amarelo);
   border-radius: 30px;
