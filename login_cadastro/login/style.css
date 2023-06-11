@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #BC1823;
+    background-image: url(../../img/Imagens\ prototipo/background.png);
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*------------------------INICIO DO MENU--------------------------*/
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.menuInicio, .menuMenu {
+    margin-right: 10px;
+    background-color: #BC1823;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border: black solid 1px;
+}
+
+.menuContact {
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border: black solid 1px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*---------------------------------------*/
+#menu li a:hover {
+    transition: 0.6s;
+    padding: 18px; /*Efeito no menu*/
+}
+/*---------------------------------------*/
+.sub-menu{
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 10px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border-radius: 30px;
+}
+
+#menu .sub-menu-items {
+    display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+    color: rgb(3, 3, 3); /*Cor do sub menu*/
+    background-color:#BC1823;
+}
+  
+#menu .sub-menu:hover .sub-menu-items {
+    display:flex; /* Concerta o menu entrar e cadastro*/
+}
+
+/*------------------------Final do menu--------------------------*/
+.wrapper-login { 
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-inputs {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.login {
+    font-size: 50pt;
+    color: white;
+}
+
+.cadastro-link{
+    margin-bottom: 40px;
+    color: white;
+}
+
+.cadastro-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-box {
+    background-color: white;
+    width: 30rem;
+    height: 70px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email-box label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.email-box img {
+    width: 70%;
+}
+
+#email {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+    font-size: 20pt;
+    text-indent: 10px;
+}
+
+#email::placeholder {
+    text-indent: 10px;
+}
+
+.senha-box {
+    background-color: white;
+    width: 30rem;
+    height: 70px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.senha-box label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+}
+
+.senha-box img {
+    width: 70%;
+}
+
+#senha {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+    font-size: 20pt;
+    text-indent: 10px;
+}
+
+#senha::placeholder {
+    text-indent: 10px;
+}
+
+.button {
+    width: 45%;
+    margin-bottom: 10px;
+    
+}
+
+.button input {
+    border: none;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(255, 255, 0, 0.747);
+    color: white;
+    border-radius: 40px;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+.needhelp {
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+}
+
+.wrapper-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.txt1 {
+    width: 100%;
+    font-size: 60pt;
+}
+
+.txt2 {
+    font-size: 30pt;
+    color: white;
+}
+

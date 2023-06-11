@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body{
+    margin: 5px;
+    padding: 0;
+    border: 0; 
+}
+/*------------------------INICIO DO MENU--------------------------*/
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.menuInicio, .menuMenu, .menuMyorders {
+    margin-right: 10px;
+    background-color: #BC1823;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+.menuContact, .menuDelivery {
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*---------------------------------------*/
+#menu li a:hover {
+    transition: 0.6s;
+    padding: 18px; /*Efeito no menu*/
+}
+/*---------------------------------------*/
+.sub-menu{
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 10px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border-radius: 30px;
+}
+
+#menu .sub-menu-items {
+    display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+    color: rgb(3, 3, 3); /*Cor do sub menu*/
+    background-color:#BC1823;
+}
+  
+#menu .sub-menu:hover .sub-menu-items {
+    display:flex; /* Concerta o menu entrar e cadastro*/
+}
+/*------------------------Final do menu--------------------------*/
+
+#cabecalho{
+    font-size: 40px;
+    text-align: center;
+    text-shadow:  0.1em 0.1em 0.2em rgb(59, 56, 56);
+    margin-left: 240px;     
+}
+
+#titulo{
+    margin-top: 0px;
+}
+
+#imagem_X-Burger {
+    height:250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #FAB819;
+    right: 0px;
+}
+
+#imagem_X-burgerfritas {
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: absolute;
+    right: 150px;
+    margin-top: 40px;
+}
+
+#imagem_X-triplo {
+    height:250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #FAB819;
+    position: absolute;
+    right: 0px;
+    margin-top: 200px;
+}
+
+.fontes_contatos{
+    color: white; 
+    font-size: 30px;
+    padding-left: 0px;
+}
+
+.icone_telefone{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 30px; 
+}
+
+.icone_whats{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.icone_instagram {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 25px;
+}
+   
+      
+

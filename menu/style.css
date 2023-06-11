@@ -1,3 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Adlery-pro;
+  src: url(../assets/Fontes/Adlery-pro.ttf);
+}
+:root { /*Definindo variaveis de cores*/
+  --amarelo: #FAB819;
+  --cinza: #A6A6A6;
+}
+
+/* #A6A6A6 COR CINZA DO MENU */
 body {
   background-color: #000;
   font-family: Arial, sans-serif;
@@ -5,10 +16,149 @@ body {
   color: #fff;
 }
 
+/*---*********************  INICIO DO MENU  ***************-------*/
+#menu {
+  top: 0;
+  margin-top: 2px;
+  width: 99%;
+  display: flex;
+}
+
+.menuInicio, .menuMenu {
+  margin-right: 10px;
+  background-color: #BC1823;
+  border-radius: 30px;
+  letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+.menuContact {
+  margin-right: 10px;
+  background-color: var(--amarelo);
+  border-radius: 30px;
+  letter-spacing: 2px; /*Espaçamento das letras*/
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+  display: flex;
+}
+
+#menu li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*---------------------------------------*/
+#menu li a:hover {
+  transition: 0.6s;
+  padding: 18px; /*Efeito no menu*/
+}
+/*---------------------------------------*/
+.sub-menu{
+  margin-right: 10px;
+  background-color: var(--amarelo);
+  border-radius: 10px;
+  letter-spacing: 2px; /*Espaçamento das letras*/
+  border-radius: 30px;
+}
+
+#menu .sub-menu-items {
+  display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+  color: rgb(3, 3, 3); /*Cor do sub menu*/
+  background-color:#BC1823;
+}
+
+#menu .sub-menu:hover .sub-menu-items {
+  display:flex; /* Concerta o menu entrar e cadastro*/
+}
+
+/*------------------------Final do menu--------------------------*/
+
 h1 {
   text-align: center;
-  color: #ff7f00;
+  color: var(--amarelo);
+  font-family: Adlery-pro;
+  font-size: 100px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin: 0;
 }
+
+h2 {
+  font-family: adlery-pro;
+  color: #FAB919;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+/*------------------------INICIO DO CAROUSEL--------------------------*/
+
+.carousel-nav-icon { /* seta que muda o carousel*/
+  height: 48px;
+  width: 48px;
+}
+
+.carousel-item .col, .carousel-item .col-sm, .carousel-item .col-md {
+  margin: 5px; /*Espaçamento entre as imagens*/
+  height: 300px; /*Tamanho*/
+  background-size: cover; /*Alinhamento das imagens*/
+  background-position: center center; /*Alinhamento das imagens*/
+}
+
+.carousel-nav-icon {
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+.col-12 {
+  border-radius: 20px;
+}
+/*------------------------Final do CAROUSEL--------------------------*/
+
+.h1_itens{
+  font-size: large;
+  color: #FAB919;
+}
+
+.h2_itens{
+  font-size: small;
+  color: #A6A6A6;
+}
+
+.p_top {
+  display: flex;
+  font-family: adlery-pro;
+  color: #FAB919;
+  font-size: 45px;
+  align-items: flex-start;
+}
+
+.p1 {
+  align-items: flex-start;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.p2 {
+  align-items: center;
+  margin: 0 200px;
+}
+
+.p3 {
+  align-items: flex-end;
+  margin-left: 200px;
+}
+
 
 .cardapio {
   display: flex;
@@ -17,7 +167,7 @@ h1 {
 }
 
 .cardapio-column {
-  flex-basis: 48%; /*Serparação das caixas dos itens*/
+  flex-basis: 32%; /*Serparação das caixas dos itens*/
 }
 
 .item {
@@ -53,13 +203,13 @@ h1 {
   background-color: #07050510;
   color: #f8efef;
   padding: 20px;
-  border: 1px solid #ff0000;
+  border: 1px solid #FAB919;
   margin-top: 20px;
   width: 300px;
 }
 
 .sacola h2 {
-  color: #ff0000;
+  color: #FAB919;
   margin-bottom: 10px;
 }
 
