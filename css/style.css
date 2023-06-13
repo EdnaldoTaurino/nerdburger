@@ -83,12 +83,8 @@ p:not(.rodape) {
     margin-top: 55px;
 }
 
-.sessao1 button {
-    border-radius: 50px;
-    background-color: rgb(255, 196, 1);
-    color: white;
-    display: flex;
-    margin-left: 450px;
+.sessao1 a {
+    margin-left: 280px;
 }
 
 .sessao2 {
