@@ -1,10 +1,21 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Adlery-pro;
+  src: url(../../assets/Fontes/adlery-pro.ttf);
+}
+
+@font-face {
+    font-family: benedict;
+    src: url(../../assets/Fontes/Benedict.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: red;
+    background-color: #BC1823;
     background-image: url(../../img/Imagens\ prototipo/background.png);
     background-size: auto;
     display: flex;
@@ -13,6 +24,75 @@ body {
     height: 100vh;
 }
 
+/*------------------------INICIO DO MENU--------------------------*/
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+.menuInicio, .menuMenu {
+    margin-right: 10px;
+    background-color: #BC1823;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border: black solid 1px;
+}
+
+.menuContact {
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 30px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border: black solid 1px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto; /*Retirando fica o meno lado esquerdo.*/
+}
+
+#menu li {
+    display: flex;
+}
+
+#menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*---------------------------------------*/
+#menu li a:hover {
+    transition: 0.6s;
+    padding: 18px; /*Efeito no menu*/
+}
+/*---------------------------------------*/
+.sub-menu{
+    margin-right: 10px;
+    background-color: #FAB819;
+    border-radius: 10px;
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    border-radius: 30px;
+}
+
+#menu .sub-menu-items {
+    display: none; /*Ocultando menu aparece só quando passar mouse por cima*/
+    color: rgb(3, 3, 3); /*Cor do sub menu*/
+    background-color:#BC1823;
+}
+  
+#menu .sub-menu:hover .sub-menu-items {
+    display:flex; /* Concerta o menu entrar e cadastro*/
+}
+
+/*------------------------Final do menu--------------------------*/
 .wrapper-login { 
     width: 45%;
     height: 50%;
@@ -138,15 +218,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
+    font-family: Adlery-pro;
 }
 
 .txt1 {
     width: 100%;
-    font-size: 60pt;
+    font-size: 90pt;
 }
 
 .txt2 {
-    font-size: 30pt;
+    font-size: 35pt;
     color: white;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
