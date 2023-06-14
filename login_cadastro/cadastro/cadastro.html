@@ -9,22 +9,20 @@
 <body>
     <nav id="menu" > <!--Início do menu-->
         <ul>
-          <div class="menuInicio">
-            <li><a href="../../index.html">Início</a></li>
-          </div>
+            <div class="menuInicio">
+                <li><a href="../../index.html">Início</a></li>
+            </div>
 
-          <div class="menuContact">
-            <li><a href="../../contato/Contatos.html">Contato</a></li>
-          </div>
+            <div class="menuContact">
+                <li><a href="../../contato/Contatos.html">Contato</a></li>
+            </div>
 
-          <div class="menuMenu">
-            <li><a href="../../menu/menu.html">Cardápio</a></li>
-          </div>
+            <div class="menuMenu">
+                <li><a href="../../menu/menu.html">Cardápio</a></li>
+            </div>
         </ul>
-      </nav>
-
-      
-    <div>
+    </nav>
+    <div class="wrapper-logo-img">
         <div class="wrapper-logo">
             <div class="txt1">
                 NERD BURGUER
@@ -46,7 +44,8 @@
                 Já registrado? <a href="../login/login.html">LOGIN</a>
             </p>
         </div>
-        <div class="wrapper-inputs">
+        <form action="">
+            <div class="wrapper-inputs">
             <div class="username-box">
                 <label><img src="../../img/user.png" alt=""></label>
                 <input type="text" name="username" id="username" placeholder="Nome Completo" required>
@@ -63,9 +62,11 @@
                 <label><img src="../../img/calendar.png" alt=""></label>
                 <input type="text" name="userdate" id="userdate" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/AAAA" required>
             </div>
-        </div>
-        <div class="button">
-            <input type="submit" value="Criar Minha Conta">
-        </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Criar Minha Conta" formaction="../login/login.html">
+            </div>
+        </form>
+        
 </body>
 </html>

@@ -116,19 +116,6 @@ p:not(.rodape) {
     margin-left: 50px;
 }
 
-.sessao2 button {
-    font-size: 20px;
-    border: black;
-    border-radius: 50px;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-left: 300px;
-    margin-top: 20px;
-}
-
 .sessao3 {
     background-color: rgb(238, 234, 234);
     text-align: center;
@@ -235,13 +222,35 @@ p:not(.rodape) {
     font-size: 25px;
 }
 
-.fale-conosco {
+.fale-conosco  {
     display: flex;
 }
 
 .fale-conosco img {
-    padding-left: 18%;
+    border-radius: 28%;
     margin: 20px;
+
+}
+
+.fale-conosco p {
+    margin-right: 25%;
+}
+
+.fale-conosco button {
+    font-size: 25px;
+    border: black;
+    border-radius: 50px;
+    background-color: #33ac28;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.siga-nos {
+    margin-left: 57%;
 }
 
 #contato img {
@@ -264,6 +273,7 @@ p:not(.rodape) {
 .icones12 {
     flex-direction: row;
     display: flex;
+    padding-left: 10px;
 }
 
 .sessao5 .icones img {
@@ -277,6 +287,7 @@ footer{
     margin-left: 110px;
     padding-top: 10px;
     font-family: arimo;
+    margin-left: 28%;
 }
 /*------------------------INICIO DO MENU--------------------------*/
 #menu {
@@ -382,18 +393,31 @@ aside {
     cursor: pointer;
 }
 
+.sidebar-txt a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
 .sidebar-txt:hover {
     background-color: rgb(184, 184, 184);
     transition: 0.2s;
     transform: scale(0.9);
 }
 
-#txt-placeholder {
-    font-size: 30pt;
+#sidebar-user {
+    
     border: none;
     border-bottom: 0.5px solid black;
     border-top: 0.5px solid black;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-user p {
+    font-size: 25pt;
+    font-weight: 700;
 }
 
 .sidebar-button {

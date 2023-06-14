@@ -87,6 +87,13 @@ body {
 
 /*texto e imagem logo*/
 
+.wrapper-logo-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .wrapper-logo {
     display: flex;
     flex-direction: column;
@@ -94,13 +101,13 @@ body {
 }
 
 .txt1 {
-    font-size: 60pt;
+    font-size: 90pt;
     color: white;
     font-family: adlery-pro;
 }
 
 .txt2 {
-    font-size: 30pt;
+    font-size: 35pt;
     color: red;
     font-family: adlery-pro;
 }
@@ -284,7 +291,7 @@ body {
 }
 
 .button {
-    width: 45%;
+    width: 70%;
 }
 
 .button input {
@@ -296,5 +303,11 @@ body {
     border-radius: 40px;
     font-size: 20pt;
     cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
