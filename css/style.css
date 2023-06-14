@@ -3,9 +3,30 @@
   font-family: Adlery-pro;
   src: url(../assets/Fontes/adlery-pro.ttf);
 }
+
 @font-face {
     font-family: benedict;
     src: url(../assets/Fontes/Benedict.ttf);
+}
+
+@font-face {
+    font-family: telegraf mediun;
+    src: url(../assets/Fontes/Telegraf\ mediun.otf)
+}
+
+@font-face {
+    font-family: telegraf;
+    src: url(../assets/Fontes/Telegraf.otf)
+}
+
+@font-face {
+    font-family: arimo;
+    src: url(../assets/Fontes/Arimo.ttf);
+}
+
+@font-face{
+    font-family: telegraf ligh;
+    src: url(../assets/Fontes/Telegraf\ Light.otf);
 }
 
 body {
@@ -14,30 +35,43 @@ body {
     border: 0;
 }
 
-.logo {
-    position: absolute;
-    margin-left: 300px;
-    margin-top: 10px;
+h2 {
+    font-family: telegraf mediun;
+    font-size: 60px;
 }
 
-h1 {
-    font-size: 80px;
-    font-family: adlery-pro;
+button {
+    font-family: telegraf ligh;
     letter-spacing: 2px;
 }
 
-.h2top{
-    font-family: benedict;
-    font-size: 35px;
-    margin-left: 100px;
-    margin-top: -40px;
+p:not(.rodape) {
+    font-family: telegraf;
+    font-size: 25px;
 }
 
 .sessao1 {
     display: flex;
     background-color: rgb(0, 0, 0);
+    margin: 20px;
+    border: rgb(0, 0, 0) solid;
+    border-radius: 20px;
+    box-shadow:rgb(0, 0, 0) 10px 5px 10px;
 }
 
+.sessao1 h1 {
+    font-size: 150px;
+    font-family: adlery-pro;
+    letter-spacing: 2px;
+}
+
+.sessao1 h2 {
+    font-family: benedict;
+    font-size: 60px;
+    margin-left: 110px;
+    margin-top: -70px;
+    letter-spacing: 5px;
+}
 .sessao1-texto{
     margin: auto;
     color: white;
@@ -50,31 +84,40 @@ h1 {
 }
 
 .sessao1 button {
-    border: black;
     border-radius: 50px;
     background-color: rgb(255, 196, 1);
     color: white;
-    padding: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
+    display: flex;
+    margin-left: 450px;
 }
 
 .sessao2 {
     display: flex;
-    background-color: #b41e1e;
+    background-color: #BC1823;
     color: white; 
     margin: 20px;
     border: rgb(0, 0, 0) solid;
     border-radius: 20px;
     box-shadow:rgb(0, 0, 0) 10px 5px 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sessao2 h2 {
+   font-family: telegraf mediun;
+   font-size: 80px;
 }
 
 .sessao2-texto {
     margin: auto;
+    margin-left: 20px;
+    margin-right: 50px;
+    text-align: justify;
 }
 
 .sessao2-img {
     margin: auto;
+    margin-left: 50px;
 }
 
 .sessao2 button {
@@ -104,12 +147,16 @@ h1 {
     font-size: 20px;
     border: black;
     border-radius: 50px;
-    background-color: #b41e1e;
+    background-color: #BC1823;
     color: white;
     padding: 20px;
     padding-left: 35px;
     padding-right: 35px;
     margin-top: 50px;
+}
+
+.sessao3 h2 {
+    margin: 0;
 }
 
 .sessao3-1 {
@@ -119,6 +166,10 @@ h1 {
 
 }
 
+.setinha {
+    padding-top: 40px;
+}
+
 .sessao3-imagens {
     border: rgb(255, 255, 255) solid;
     border-radius: 20px;
@@ -126,32 +177,19 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: px;
 }
 
-.sessao3 h1 {
-    margin: 0;
-    padding-bottom: 20px;
-}
 
-.sessao3 p {
-    margin: 0;
-    padding-top: 25px;
-}
 
 .sessao4 {
-    background-color: #b41e1e;
+    background-color: #BC1823;
     text-align: center;
     color: white;
     margin: 20px;
     border: rgb(0, 0, 0) solid;
     border-radius: 20px;
     box-shadow:rgb(0, 0, 0) 10px 5px 10px;
-}
-
-.sessao4 h1 {
-    margin: 0;
-    padding: 80px;
 }
 
 .sessao4-1 {
@@ -167,6 +205,23 @@ h1 {
 
 .sessao4-1 div .icone {
     padding-left: 50px;
+}
+
+.sessao4-1 p {
+    font-size: 20px;
+}
+
+.sessao4-1 .nome {
+    font-size: 28px;
+}
+
+.sessao4-1 .estrelinhas {
+    padding-bottom: 50px;
+    padding-top: px;
+}
+
+.sessao4 h2{
+    padding: 50px;
 }
 
 .sessao5 {
@@ -195,10 +250,11 @@ h1 {
     margin-right: 45px;
 }
 
-.rodape {
+footer{
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     margin-left: 200px;
+    font-family: arimo;
 }
 /*------------------------INICIO DO MENU--------------------------*/
 #menu {
@@ -304,18 +360,31 @@ aside {
     cursor: pointer;
 }
 
+.sidebar-txt a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
 .sidebar-txt:hover {
     background-color: rgb(184, 184, 184);
     transition: 0.2s;
     transform: scale(0.9);
 }
 
-#txt-placeholder {
-    font-size: 30pt;
+#sidebar-user {
+    
     border: none;
     border-bottom: 0.5px solid black;
     border-top: 0.5px solid black;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-user p {
+    font-size: 25pt;
+    font-weight: 700;
 }
 
 .sidebar-button {
