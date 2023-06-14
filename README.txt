@@ -1,4 +1,4 @@
-Ednaldo - Cardápio.
+Ednaldo - Cardápio, menus, gerenciamento de branchs, 
 Francisco - Pagina inicial.
 Roseanne - Prototiagem, Fale conosco.
 Michelly - prototipagem.
