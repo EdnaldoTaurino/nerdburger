@@ -83,12 +83,8 @@ p:not(.rodape) {
     margin-top: 55px;
 }
 
-.sessao1 button {
-    border-radius: 50px;
-    background-color: rgb(255, 196, 1);
-    color: white;
-    display: flex;
-    margin-left: 450px;
+.sessao1 a {
+    margin-left: 280px;
 }
 
 .sessao2 {
@@ -120,19 +116,6 @@ p:not(.rodape) {
     margin-left: 50px;
 }
 
-.sessao2 button {
-    font-size: 20px;
-    border: black;
-    border-radius: 50px;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-left: 300px;
-    margin-top: 20px;
-}
-
 .sessao3 {
     background-color: rgb(238, 234, 234);
     text-align: center;
@@ -153,6 +136,12 @@ p:not(.rodape) {
     padding-left: 35px;
     padding-right: 35px;
     margin-top: 50px;
+    cursor: pointer;
+}
+
+.sessao3 button a {
+    text-decoration: none;
+    color: white;
 }
 
 .sessao3 h2 {
@@ -177,7 +166,6 @@ p:not(.rodape) {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 60px;
-    padding-bottom: px;
 }
 
 
@@ -234,27 +222,72 @@ p:not(.rodape) {
     font-size: 25px;
 }
 
-.sessao5 .icones {
+.fale-conosco  {
     display: flex;
-    justify-content: space-around;
-    margin-left: 100px;    
 }
 
-.sessao5 .icones div {
+.fale-conosco img {
+    border-radius: 28%;
+    margin: 20px;
+
+}
+
+.fale-conosco p {
+    margin-right: 25%;
+}
+
+.fale-conosco button {
+    font-size: 25px;
+    border: black;
+    border-radius: 50px;
+    background-color: #33ac28;
+    color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.siga-nos {
+    margin-left: 57%;
+}
+
+#contato img {
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 45px;
+}
+
+ .icones {
+    display: flex;
+    margin-left: 100px; 
+    text-align: center; 
+    flex-direction: column;
+}
+
+.icones div {
     padding-left: 100px;
 }
 
-.sessao5 img {
+.icones12 {
+    flex-direction: row;
+    display: flex;
+    padding-left: 10px;
+}
+
+.sessao5 .icones img {
     border-radius: 20px;
-    margin: 20px;
     margin-right: 45px;
 }
 
 footer{
     text-align: center;
     font-size: 17px;
-    margin-left: 200px;
+    margin-left: 110px;
+    padding-top: 10px;
     font-family: arimo;
+    margin-left: 28%;
 }
 /*------------------------INICIO DO MENU--------------------------*/
 #menu {
