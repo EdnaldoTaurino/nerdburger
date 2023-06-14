@@ -4,20 +4,13 @@
   src: url(../../assets/Fontes/adlery-pro.ttf);
 }
 
-@font-face {
-    font-family: benedict;
-    src: url(../../assets/Fontes/Benedict.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #BC1823;
-    background-image: url(../../img/Imagens\ prototipo/background.png);
-    background-size: auto;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +31,6 @@ body {
     background-color: #BC1823;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
-    border: black solid 1px;
 }
 
 .menuContact {
@@ -46,7 +38,6 @@ body {
     background-color: #FAB819;
     border-radius: 30px;
     letter-spacing: 2px; /*Espaçamento das letras*/
-    border: black solid 1px;
 }
 
 #menu ul {
@@ -94,7 +85,48 @@ body {
 }
 
 /*------------------------Final do menu--------------------------*/
-.wrapper-login { 
+
+/*texto e imagem logo*/
+
+.wrapper-logo-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.txt1 {
+    font-size: 90pt;
+    color: white;
+    font-family: adlery-pro;
+}
+
+.txt2 {
+    font-size: 35pt;
+    color: red;
+    font-family: adlery-pro;
+}
+
+.img-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+/*Cadastro*/
+
+.wrapper-cadastro { 
     width: 45%;
     height: 50%;
     display: flex;
@@ -108,17 +140,20 @@ body {
     margin-bottom: 20px;
 }
 
-.login {
+.cadastro-text {
     font-size: 50pt;
     color: white;
+    font-family: adlery-pro;
+    margin-bottom: 20px;
 }
 
-.cadastro-link{
+.login-link{
     margin-bottom: 40px;
     color: white;
+    
 }
 
-.cadastro-link a {
+.login-link a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -165,6 +200,8 @@ body {
     border-radius: 40px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
+
 }
 
 .senha-box label {
@@ -193,50 +230,18 @@ body {
 }
 
 .button {
-    width: 45%;
-    margin-bottom: 10px;
-    
+    width: 70%;
 }
 
 .button input {
     border: none;
     width: 100%;
     height: 4rem;
-    background-color: rgba(255, 255, 0, 0.747);
+    background-color: #ffc10e;
     color: white;
     border-radius: 40px;
     font-size: 20pt;
     cursor: pointer;
-}
-
-.needhelp a{
-    text-decoration: none;
-    color: white;
-    font-size: 15pt;
-}
-
-.needhelp {
-    margin-bottom: 10px;
-}
-.helpbox {
-    margin-bottom: 10px;
-}
-
-.wrapper-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    font-family: Adlery-pro;
-}
-
-.txt1 {
-    width: 100%;
-    font-size: 90pt;
-}
-
-.txt2 {
-    font-size: 35pt;
-    color: white;
 }
 
 form {
@@ -244,3 +249,4 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
