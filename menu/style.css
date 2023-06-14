@@ -6,6 +6,8 @@
 :root { /*Definindo variaveis de cores*/
   --amarelo: #FAB819;
   --cinza: #A6A6A6;
+  --vermelhoPromo: #ff2a00de;
+  --azulpromo: rgb(112, 250, 0);
 }
 
 /* #A6A6A6 COR CINZA DO MENU */
@@ -22,6 +24,7 @@ body {
   margin-top: 2px;
   width: 99%;
   display: flex;
+  margin-top: 10px;
 }
 
 .menuInicio, .menuMenu {
@@ -127,12 +130,12 @@ h2 {
 
 .h1_itens{
   font-size: large;
-  color: #FAB919;
+  color: var(--amarelo)
 }
 
 .h2_itens{
   font-size: small;
-  color: #A6A6A6;
+  color: var(--cinza)
 }
 
 .p_top {
@@ -159,6 +162,14 @@ h2 {
   margin-left: 200px;
 }
 
+.promocao {
+  color: #ff2a00de;
+}
+
+.promocao2 {
+  color: var(--azulpromo);
+}
+
 
 .cardapio {
   display: flex;
@@ -174,7 +185,7 @@ h2 {
   border-radius: 10px;
   cursor: pointer;
   padding: 10px;
-  border: 1px solid #ff0000;
+  border: 1px solid #ffffff;
   background-color: #111;
   color: #fff;
   margin-bottom: 30px;
@@ -195,7 +206,7 @@ h2 {
 }
 
 .item:hover img {
-  transform: scale(3);/*Aumenta a imagem quando coloca o mouse em cima*/
+  transform: scale(2.5);/*Aumenta a imagem quando coloca o mouse em cima*/
 }
 
 .sacola {
@@ -203,7 +214,7 @@ h2 {
   background-color: #07050510;
   color: #f8efef;
   padding: 20px;
-  border: 1px solid #FAB919;
+  border: 1px solid #ffffff;
   margin-top: 20px;
   width: 300px;
 }
@@ -228,7 +239,10 @@ h2 {
 
 .fazer-pedido {
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: -50%;
+  left: 47.5%;
 }
 
 .fazer-pedido button {
@@ -248,8 +262,10 @@ h2 {
 
 .total {
   text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: -45%;
+  left: 47.8%;
 }
 
 #imagem-popup {
@@ -270,7 +286,7 @@ h2 {
   border-radius: 10px;
   max-width: 90%;
   max-height: 90%;
-  border: 1px solid #fff;
+  border: 1px solid #d3d1d1;
 }
 
 #imagem-popup-fechar {

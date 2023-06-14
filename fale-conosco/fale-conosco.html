@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Nerd_Burguer_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="fale-conosco.css">
+    <title>Contato</title>
+    
+</head>
+    <body>
+        <nav id="menu" > <!--Início do menu-->
+            <ul>
+               <div class="menuInicio">
+                  <li><a href="../index.html">Início</a></li>
+                </div>
+
+              <div class="menuContact">
+                <li><a href="../index.html#contato">Contato</a></li>
+              </div>
+    
+              <div class="menuMenu">
+                <li><a href="../menu/menu.html">Cardápio</a></li>
+              </div>
+              
+              <div class="sub-menu">
+                <li><a href="../login_cadastro/login/login.html">Login</a>
+                  <ul class="sub-menu-items">
+                    <div>
+                      <li><a href="../login_cadastro/login/login.html">Entrar</a></li>
+                    </div>
+    
+                    <div>
+                      <li><a href="../login_cadastro/cadastro/cadastro.html">Cadastro</a></li>
+                    </div>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </nav>
+
+          <!--Final do menu-->
+
+        <img src="../img/Nerd_Burguer_Logo.png" alt="logo nerd burger" width="300" height="300"/>
+
+        <h1>Fale Conosco</h1>
+        <h3>Informe os dados abaixo:</h3>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input name="nome" id="nome" class="campos_input" style="display: block" required placeholder="Seu nome">
+
+            <label for=email>Email:</label>
+              <input email="email" id="email" class="campos_input" size="30" placeholder="exemplo@gmail.com" style="display:block" required>
+
+            <label for="assunto">Assunto:</label>
+            <input name="assunto" id="assunto" class="campos_input" style="display:block" required placeholder="Digite o assunto da mensagem">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem"  id= "mensagem" placeholder="Digite sua mensagem" style="display:block" required></textarea>
+            
+          <select name="">
+            <option for="elogio">Elogio</label>
+            <option for="sugestao">Sugestão</label>
+            <option for="reclamacao">Reclamação</label>
+          </select>
+
+          <div class="checkbox">
+            <input type="checkbox" name="concordo com os termos de privacidade do site" required>
+            <label for="concordo com os termos de privacidade do site">Aceito os termos de uso e política de privacidade do site</label>
+          </div>
+
+            <input type="reset" value="Limpar Formulário">
+            <input type="submit" value="Enviar" formaction="obrigado.html">
+        </form>
+    </body>
+</html>

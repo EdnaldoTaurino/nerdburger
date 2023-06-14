@@ -3,25 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - Nerdburguer</title>
+        <link rel="shortcut icon" href="../../img/Nerd_Burguer_Logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <title>Login - Nerdburguer</title>
+        
     </head>
     <body>
         <nav id="menu" > <!--Início do menu-->
             <ul>
-              <div class="menuInicio">
-                <li><a href="../../index.html">Início</a></li>
-              </div>
+                <div class="menuInicio">
+                    <li><a href="../../index.html">Início</a></li>
+                </div>
     
-              <div class="menuContact">
-                <li><a href="../../Contato/Contatos.html">Contato</a></li>
-              </div>
+                <div class="menuContact">
+                    <li><a href="../../contato/Contatos.html">Contato</a></li>
+                </div>
     
-              <div class="menuMenu">
-                <li><a href="../../menu/">Cardápio</a></li>
-              </div>
+                <div class="menuMenu">
+                    <li><a href="../../menu/menu.html">Cardápio</a></li>
+                </div>
             </ul>
-          </nav>
+        </nav>
         <div class="wrapper-login">
             <div class="login">
                 <p>Login</p>
@@ -31,19 +33,21 @@
                     Não possui conta? <a href="../cadastro/cadastro.html">CRIE AQUI</a>
                 </p>
             </div>
-            <div class="wrapper-inputs">
-                <div class="email-box">
-                    <label><img src="../../img/user.png" alt=""></label>
-                    <input type="email" name="useremail" id="email" placeholder="E-mail" required>
+            <form action="">
+                <div class="wrapper-inputs">
+                    <div class="email-box">
+                        <label><img src="../../img/user.png" alt=""></label>
+                        <input type="email" name="useremail" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="senha-box">
+                        <label><img src="../../img/locker.png" alt=""></label>
+                        <input type="password" name="usersenha" id="senha" placeholder="Senha" required>
+                    </div>
                 </div>
-                <div class="senha-box">
-                    <label><img src="../../img/locker.png" alt=""></label>
-                    <input type="password" name="usersenha" id="senha" placeholder="Senha" required>
+                <div class="button">
+                    <input type="submit" value="Iniciar" formaction="../../index.html">
                 </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="Iniciar">
-            </div>
+            </form>
             <div>
                 <a href="" class="needhelp">Precisa de ajuda?</a>
             </div>

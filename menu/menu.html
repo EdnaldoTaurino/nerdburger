@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nerd Burger Hamburgueria Artesanal</title>
+    <link rel="shortcut icon" href="../img/Nerd_Burguer_Logo.png" type="image/x-icon">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="style.css">
   <title>Nerd Burger - Cardápio</title>
@@ -19,11 +19,7 @@
       </div>
 
       <div class="menuContact">
-        <li><a href="Contato/Contatos.html">Contato</a></li>
-      </div>
-
-      <div class="menuMenu">
-        <li><a href="menu.html">Menu</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
       </div>
 
       <div class="sub-menu">
@@ -60,33 +56,32 @@
           </div>
         </a>
       </div>
-
+      
       <div class="col-10">
-        <!-- Inicio carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
-                <div style="background-image:url('../img/Hamburger\ com\ batata\ 4.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center"> <!-- Adiciona imagens aqui -->
+                <div style="background-image:url('../img/menu-cardápio/carrousel1.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center"> <!-- Adiciona imagens aqui -->
                 </div>
 
-                <div style="background-image:url('../img/Hamburguer\ com\ batata\ 1.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
+                <div style="background-image:url('../img/menu-cardápio/carrousel2.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
                 </div>
 
-                <div style="background-image:url('../img/Hamburguer\ com\ batata\ 2.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
+                <div style="background-image:url('../img/menu-cardápio/Carrousel\ -\ batata\ frita.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
                 </div>
               </div>
             </div>
 
             <div class="carousel-item">
               <div class="row">
-                <div style="background-image:url('../img/Hamburguer_com_batata1.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
+                <div style="background-image:url('../img/menu-cardápio/carousel\ açai.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
                 </div>
 
-                <div style="background-image:url('../img/X-\ burguer\ com\ fritas\ e\ molho.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
+                <div style="background-image:url('../img/menu-cardápio/cebola\ empanada.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center">
                 </div>
 
-                <div style="background-image:url('../img/X-burguer\ com\ molho\ e\ fritas.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
+                <div style="background-image:url('../img/menu-cardápio/suco\ da\ fruta.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
                 </div>
               </div>
             </div>
@@ -106,8 +101,6 @@
       </div>
     </div>
   </nav>
-  <!-- Parcial -->
-
 <!----------- ---------------------- FINAL DO carousel --------------------------------->
 <div class="p_top">
   <div class="p1">
@@ -123,91 +116,92 @@
 <!----------- ---------------------- Inicio do cardápio --------------------------------->
   <div class="cardapio">
     <div class="cardapio-column">
-      <div class="item" onclick="adicionarItem('Hambúrguer Cheese', 10)">
-        <img src="../img/Hamburger com batata 4.jpeg" alt="Hambúrguer Cheese" onclick="exibirImagem('../img/Hamburger com batata 4.jpeg')"><!--adiciona o clique e expande as imagens-->
+      <div class="item" onclick="adicionarItem('Cheddar Burguer', 14)"> <!--onclick Item, preço do item para o js calcular o preço na sacola-->
+        <img src="../img/menu-cardápio/CheddarBurger.jpeg" alt="CheddarBurger" onclick="exibirImagem('../img/menu-cardápio/CheddarBurger.jpeg')"><!--adiciona o clique e expande as imagens-->
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">CheddarBurger - R$14</div><div class="h2_itens">Pão levemente tostado na manteiga, com carne artesanal ao ponto molho especial da casa e bastante cheddar.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Batatas Fritas', 5)">
-        <img src="../img/Hamburguer com batata 1.jpeg" alt="Batatas Fritas" onclick="exibirImagem('../img/Hamburguer com batata 1.jpeg')">
+      <div class="item" onclick="adicionarItem('X - Burguer', 12)">
+        <img src="../img/menu-cardápio/Chese burger.jpeg" alt="x burger" onclick="exibirImagem('../img/menu-cardápio/Chese burger.jpeg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">X - Burger - R$12</div><div class="h2_itens">Pão levemente tostado na manteiga, com carne artesanal ao ponto, molho especial da casa e queijo mussarela.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Batatas Fritas', 5)">
-        <img src="../img/Hamburguer com batata 1.jpeg" alt="Batatas Fritas" onclick="exibirImagem('../img/Hamburguer com batata 1.jpeg')">
+      <div class="item" onclick="adicionarItem('Duplo Cheddar Burger', 29.90)">
+        <img src="../img/menu-cardápio/combo - Duplo cheddar com fritas.jpg" alt="Duplo cheddar burger" onclick="exibirImagem('../img/menu-cardápio/combo - Duplo cheddar com fritas.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Duplo Cheddar Burger - <span class="promocao">Promoção de <del> R$ 39,90</del> por</span> <span class="promocao2"> R$ 29,90</span></div><div class="h2_itens">São duas irresistíveis carnes artesanais acompanhadas de um pão levemente tostado na manteiga com bastante cheddar e na salada alface, tomate, cebola e molho especial da casa, acompanha também batatas fritas crocante. </div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Refrigerante', 3)">
-        <img src="../img/Hamburguer com batata 2.jpeg" alt="Refrigerante" onclick="exibirImagem('../img/Hamburguer com batata 2.jpeg')">
+      <div class="item" onclick="adicionarItem('X - Bacon', 16)">
+        <img src="../img/menu-cardápio/X-bacon.jpeg" alt="x bacon" onclick="exibirImagem('../img/menu-cardápio/X-bacon.jpeg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">X - Bacon - R$16</div><div class="h2_itens">Delicioso pão fofinho e levemente tostado na manteiga, com uma carne artesanal bem temperada e ao ponto, alface, molho especial da casa e MUITO... MUITO BACON </div>
         </div>
       </div>
     </div>
 
     <div class="cardapio-column">
-      <div class="item" onclick="adicionarItem('Hambúrguer Vegetariano', 8)">
-        <img src="../img/Hamburguer_com_batata1.jpeg" alt="Hambúrguer Vegetariano" onclick="exibirImagem('../img/Hamburguer_com_batata1.jpeg')">
+      <div class="item" onclick="adicionarItem('Batata Frita', 8)">
+        <img src="../img/menu-cardápio/batata frita1.jpg" alt="Batata Frita" onclick="exibirImagem('../img/menu-cardápio/batata frita1.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Batata Frita - R$8</div><div class="h2_itens">Porção grande de batata frita crocante.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Batatas Fritas', 5)">
-        <img src="../img/Hamburguer com batata 1.jpeg" alt="Batatas Fritas" onclick="exibirImagem('../img/Hamburguer com batata 1.jpeg')">
+      <div class="item" onclick="adicionarItem('Molho Especial da Casa', 3)">
+        <img src="../img/menu-cardápio/molho especial1.jpg" alt="Molho especial" onclick="exibirImagem('../img/menu-cardápio/molho especial1.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Molho Especial da Casa - R$3</div><div class="h2_itens">Maionese caseira nosso molho especial da casa.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Batatas Fritas', 5)">
-        <img src="../img/Hamburguer com batata 1.jpeg" alt="Batatas Fritas" onclick="exibirImagem('../img/Hamburguer com batata 1.jpeg')">
+      <div class="item" onclick="adicionarItem('Açaí', 15)">
+        <img src="../img/menu-cardápio/açai.jpg" alt="Açaí" onclick="exibirImagem('../img/menu-cardápio/açai.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Açaí - R$15</div><div class="h2_itens">Monte do seu jeito, escolha acompanhamentos, tamanho e caldas.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Refrigerante', 3)">
-        <img src="../img/Hamburguer com batata 2.jpeg" alt="Refrigerante" onclick="exibirImagem('../img/Hamburguer com batata 2.jpeg')">
+      <div class="item" onclick="adicionarItem('Cebola Empanada', 8)">
+        <img src="../img/menu-cardápio/cebola empanada.jpg" alt="Cebola onion" onclick="exibirImagem('../img/menu-cardápio/cebola empanada.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Cebola Empanada - R$8</div><div class="h2_itens">Cebola empanada.</div>
         </div>
       </div>
     </div>
 
-        <div class="cardapio-column">
-      <div class="item" onclick="adicionarItem('Hambúrguer Vegetariano', 8)">
-        <img src="../img/Hamburguer_com_batata1.jpeg" alt="Hambúrguer Vegetariano" onclick="exibirImagem('../img/Hamburguer_com_batata1.jpeg')">
+    <div class="cardapio-column">
+
+      <div class="item" onclick="tamanho('Coca-Cola', 6)"> <!--Tamanho referencia ao js para perguntar em prompt o tamanho do item a ser adicionado a sacola-->
+        <img src="../img/menu-cardápio/coca-cola-sem fundo.png" alt="Coca-Cola" onclick="exibirImagem('../img/menu-cardápio/coca-cola-sem fundo.png')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Coca-Cola - A partir de R$ 6</div><div class="h2_itens">Coca-cola gelada escolha entre os tamanhos 1 litro e 2 litros.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Salada', 4)">
-        <img src="../img/X - cheddar com fritas e molho especial.jpg" alt="Salada" onclick="exibirImagem('../img/X - cheddar com fritas e molho especial.jpg')">
+      <div class="item" onclick="tamanho('Fanta Laranja', 6)">
+        <img src="../img/menu-cardápio/fanta laranja.png" alt="Fanta Laranja" onclick="exibirImagem('../img/menu-cardápio/fanta laranja.png')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Fanta Laranja - A partir de R$ 6</div><div class="h2_itens">fanta laranja gelada escolha entre os tamanhos 1 litro e 2 litros.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Chá Gelado', 2)">
-        <img src="../img/X - cheddar com fritas e molho especial.jpg" alt="Chá Gelado" onclick="exibirImagem('../img/X - cheddar com fritas e molho especial.jpg')">
+      <div class="item" onclick="tamanho('Fanta Uva', 6)">
+        <img src="../img/menu-cardápio/fanta uva.png" alt="Fanta Uva" onclick="exibirImagem('../img/X - cheddar com fritas e molho especial.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Fanta Uva - A partir de R$ 6</div><div class="h2_itens">Fanta laranja gelada escolha entre os tamanhos 1 litro e 2 litros.</div>
         </div>
       </div>
 
-      <div class="item" onclick="adicionarItem('Sorvete', 6)">
-        <img src="../img/X - cheddar com fritas e molho especial.jpg" alt="Sorvete" onclick="exibirImagem('../img/X - cheddar com fritas e molho especial.jpg')">
+      <div class="item" onclick="sucos('Suco da fruta', 7)">
+        <img src="../img/menu-cardápio/suco da fruta.jpg" alt="Suco da Fruta" onclick="exibirImagem('../img/menu-cardápio/suco da fruta.jpg')">
         <div>
-          <div class="h1_itens">Hambúrguer Cheese - R$10</div><div class="h2_itens">Lorem ipsum dolor sit amet consectetur adipisicing elit.amet consectetur adipisicing elit.</div>
+          <div class="h1_itens">Suco da Fruta - R$ 7</div><div class="h2_itens">400ml de Suco da fruta gelado escolha os sabores morango, kiwi ou laranja</div>
         </div>
       </div>
     </div>
@@ -219,10 +213,11 @@
     <ul id="itens-sacola"></ul>
   </div>
 
+ <!--Botão fazer pedido-->
   <div class="fazer-pedido">
     <button onclick="fazerPedido()">Fazer Pedido</button>
   </div>
-
+ <!--Botão fazer pedido-->
   <div class="total" id="total"></div>
 
   <div id="imagem-popup" onclick="fecharImagem()">

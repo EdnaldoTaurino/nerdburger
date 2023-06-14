@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Nerdburguer</title>
+    <link rel="shortcut icon" href="../../img/Nerd_Burguer_Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <title>Cadastro - Nerdburguer</title>
+    
 </head>
 <body>
     <nav id="menu" > <!--Início do menu-->
         <ul>
-          <div class="menuInicio">
-            <li><a href="../../index.html">Início</a></li>
-          </div>
+            <div class="menuInicio">
+                <li><a href="../../index.html">Início</a></li>
+            </div>
 
-          <div class="menuContact">
-            <li><a href="../../Contato/Contatos.html">Contato</a></li>
-          </div>
+            <div class="menuContact">
+                <li><a href="../../contato/Contatos.html">Contato</a></li>
+            </div>
 
-          <div class="menuMenu">
-            <li><a href="../../menu/menu.html">Menu</a></li>
-          </div>
+            <div class="menuMenu">
+                <li><a href="../../menu/menu.html">Cardápio</a></li>
+            </div>
         </ul>
-      </nav>
-
-      
-    <div>
+    </nav>
+    
+    <div class="wrapper-logo-img">
         <div class="wrapper-logo">
             <div class="txt1">
                 NERD BURGUER
@@ -46,26 +47,38 @@
                 Já registrado? <a href="../login/login.html">LOGIN</a>
             </p>
         </div>
-        <div class="wrapper-inputs">
+        <form action="">
+            <div class="wrapper-inputs">
             <div class="username-box">
                 <label><img src="../../img/user.png" alt=""></label>
-                <input type="text" name="username" id="username" placeholder="Nome Completo">
+                <input type="text" name="username" id="username" placeholder="Nome Completo" required>
             </div>
+
+            <div class="userphone-box">
+                <label><img src="data:image/png;base64,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"></label>
+                <input type="number" name="userphone" id="userphone" placeholder="(xx) xxxxx-xxxx " required>
+            </div>
+            
             <div class="email-box">
                 <label><img src="../../img/email.png" alt=""></label>
                 <input type="email" name="useremail" id="email" placeholder="E-mail" required>
             </div>
+
             <div class="senha-box">
                 <label><img src="../../img/locker.png" alt=""></label>
                 <input type="password" name="usersenha" id="senha" placeholder="Crie uma senha" required>
             </div>
+
             <div class="userdate-box">
                 <label><img src="../../img/calendar.png" alt=""></label>
                 <input type="text" name="userdate" id="userdate" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/AAAA" required>
             </div>
-        </div>
-        <div class="button">
-            <input type="submit" value="Criar Minha Conta">
-        </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Criar Minha Conta" formaction="../login/login.html">
+            </div>
+        </form>
+        
 </body>
 </html>

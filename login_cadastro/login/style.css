@@ -1,3 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Adlery-pro;
+  src: url(../../assets/Fontes/adlery-pro.ttf);
+}
+
+@font-face {
+    font-family: benedict;
+    src: url(../../assets/Fontes/Benedict.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +30,7 @@ body {
     top: 0;
     width: 100%;
     display: flex;
+    margin-top: 10px;
 }
 
 .menuInicio, .menuMenu {
@@ -207,15 +219,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
+    font-family: Adlery-pro;
 }
 
 .txt1 {
     width: 100%;
-    font-size: 60pt;
+    font-size: 90pt;
 }
 
 .txt2 {
-    font-size: 30pt;
+    font-size: 35pt;
     color: white;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
