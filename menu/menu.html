@@ -1,0 +1,232 @@
+<!DOCTYPE html> <!--Falta concertar o menu com fotos e outras melhorias--><!--Adicionar menu principal-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Nerd_Burguer_Logo.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+  <title>Nerd Burger - Cardápio</title>
+</head>
+<body>
+  <!--------------------Início do menu--------------->
+
+  <nav id="menu" > 
+    <ul>
+      <div class="menuInicio">
+        <li><a href="../index.html">Início</a></li>
+      </div>
+
+      <div class="menuContact">
+        <li><a href="../index.html#contato">Contato</a></li>
+      </div>
+
+      <div class="sub-menu">
+        <li><a href="#login">Login</a>
+          <ul class="sub-menu-items">
+            <div>
+              <li><a href="../login_cadastro/login/login.html">Entrar</a></li>
+            </div>
+
+            <div>
+              <li><a href="../login_cadastro/cadastro/cadastro.html">Cadastro</a></li>
+            </div>
+            
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <h1>Cardápio</h1>
+  <h2>Destaques</h2>
+  <!-----------  FINAL DO MENU -------------->
+
+   <!-----------  Inicio do carousel -------------->
+
+   <nav class="my-5 text-center container">
+
+    <div class="row d-flex align-items-center">
+      <div class="col-1 d-flex align-items-center justify-content-center">
+        <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <div class="carousel-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-10">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div style="background-image:url('../img/menu-cardápio/carrousel1.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center"> <!-- Adiciona imagens aqui -->
+                </div>
+
+                <div style="background-image:url('../img/menu-cardápio/carrousel2.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
+                </div>
+
+                <div style="background-image:url('../img/menu-cardápio/Carrousel\ -\ batata\ frita.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div style="background-image:url('../img/menu-cardápio/carousel\ açai.jpeg');" class="col-12 col-md d-flex align-items-center justify-content-center">
+                </div>
+
+                <div style="background-image:url('../img/menu-cardápio/cebola\ empanada.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center">
+                </div>
+
+                <div style="background-image:url('../img/menu-cardápio/suco\ da\ fruta.jpg');" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- FIM carousel -->
+      
+      <div class="col-1 d-flex align-items-center justify-content-center">
+        <a href="#carouselExampleIndicators" data-slide="next"> <!--Botão passar direito-->
+          <div class="carousel-nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+<!----------- ---------------------- FINAL DO carousel --------------------------------->
+<div class="p_top">
+  <div class="p1">
+    <p>Hambúrgueres</p>
+  </div>
+  <div class="p2">
+    <p>Acompanhamentos</p>
+  </div>
+  <div class="p3">
+    <p>Bebidas</p>
+  </div>
+</div>
+<!----------- ---------------------- Inicio do cardápio --------------------------------->
+  <div class="cardapio">
+    <div class="cardapio-column">
+      <div class="item" onclick="adicionarItem('Cheddar Burguer', 14)"> <!--onclick Item, preço do item para o js calcular o preço na sacola-->
+        <img src="../img/menu-cardápio/CheddarBurger.jpeg" alt="CheddarBurger" onclick="exibirImagem('../img/menu-cardápio/CheddarBurger.jpeg')"><!--adiciona o clique e expande as imagens-->
+        <div>
+          <div class="h1_itens">CheddarBurger - R$14</div><div class="h2_itens">Pão levemente tostado na manteiga, com carne artesanal ao ponto molho especial da casa e bastante cheddar.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="adicionarItem('X - Burguer', 12)">
+        <img src="../img/menu-cardápio/Chese burger.jpeg" alt="x burger" onclick="exibirImagem('../img/menu-cardápio/Chese burger.jpeg')">
+        <div>
+          <div class="h1_itens">X - Burger - R$12</div><div class="h2_itens">Pão levemente tostado na manteiga, com carne artesanal ao ponto, molho especial da casa e queijo mussarela.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="adicionarItem('Duplo Cheddar Burger', 29.90)">
+        <img src="../img/menu-cardápio/combo - Duplo cheddar com fritas.jpg" alt="Duplo cheddar burger" onclick="exibirImagem('../img/menu-cardápio/combo - Duplo cheddar com fritas.jpg')">
+        <div>
+          <div class="h1_itens">Duplo Cheddar Burger - <span class="promocao">Promoção de <del> R$ 39,90</del> por</span> <span class="promocao2"> R$ 29,90</span></div><div class="h2_itens">São duas irresistíveis carnes artesanais acompanhadas de um pão levemente tostado na manteiga com bastante cheddar e na salada alface, tomate, cebola e molho especial da casa, acompanha também batatas fritas crocante. </div>
+        </div>
+      </div>
+
+      <div class="item" onclick="adicionarItem('X - Bacon', 16)">
+        <img src="../img/menu-cardápio/X-bacon.jpeg" alt="x bacon" onclick="exibirImagem('../img/menu-cardápio/X-bacon.jpeg')">
+        <div>
+          <div class="h1_itens">X - Bacon - R$16</div><div class="h2_itens">Delicioso pão fofinho e levemente tostado na manteiga, com uma carne artesanal bem temperada e ao ponto, alface, molho especial da casa e MUITO... MUITO BACON </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardapio-column">
+      <div class="item" onclick="adicionarItem('Batata Frita', 8)">
+        <img src="../img/menu-cardápio/batata frita1.jpg" alt="Batata Frita" onclick="exibirImagem('../img/menu-cardápio/batata frita1.jpg')">
+        <div>
+          <div class="h1_itens">Batata Frita - R$8</div><div class="h2_itens">Porção grande de batata frita crocante.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="adicionarItem('Molho Especial da Casa', 3)">
+        <img src="../img/menu-cardápio/molho especial1.jpg" alt="Molho especial" onclick="exibirImagem('../img/menu-cardápio/molho especial1.jpg')">
+        <div>
+          <div class="h1_itens">Molho Especial da Casa - R$3</div><div class="h2_itens">Maionese caseira nosso molho especial da casa.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="adicionarItem('Açaí', 15)">
+        <img src="../img/menu-cardápio/açai.jpg" alt="Açaí" onclick="exibirImagem('../img/menu-cardápio/açai.jpg')">
+        <div>
+          <div class="h1_itens">Açaí - R$15</div><div class="h2_itens">Monte do seu jeito, escolha acompanhamentos, tamanho e caldas.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="adicionarItem('Cebola Empanada', 8)">
+        <img src="../img/menu-cardápio/cebola empanada.jpg" alt="Cebola onion" onclick="exibirImagem('../img/menu-cardápio/cebola empanada.jpg')">
+        <div>
+          <div class="h1_itens">Cebola Empanada - R$8</div><div class="h2_itens">Cebola empanada.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardapio-column">
+
+      <div class="item" onclick="tamanho('Coca-Cola', 6)"> <!--Tamanho referencia ao js para perguntar em prompt o tamanho do item a ser adicionado a sacola-->
+        <img src="../img/menu-cardápio/coca-cola-sem fundo.png" alt="Coca-Cola" onclick="exibirImagem('../img/menu-cardápio/coca-cola-sem fundo.png')">
+        <div>
+          <div class="h1_itens">Coca-Cola - A partir de R$ 6</div><div class="h2_itens">Coca-cola gelada escolha entre os tamanhos 1 litro e 2 litros.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="tamanho('Fanta Laranja', 6)">
+        <img src="../img/menu-cardápio/fanta laranja.png" alt="Fanta Laranja" onclick="exibirImagem('../img/menu-cardápio/fanta laranja.png')">
+        <div>
+          <div class="h1_itens">Fanta Laranja - A partir de R$ 6</div><div class="h2_itens">fanta laranja gelada escolha entre os tamanhos 1 litro e 2 litros.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="tamanho('Fanta Uva', 6)">
+        <img src="../img/menu-cardápio/fanta uva.png" alt="Fanta Uva" onclick="exibirImagem('../img/X - cheddar com fritas e molho especial.jpg')">
+        <div>
+          <div class="h1_itens">Fanta Uva - A partir de R$ 6</div><div class="h2_itens">Fanta laranja gelada escolha entre os tamanhos 1 litro e 2 litros.</div>
+        </div>
+      </div>
+
+      <div class="item" onclick="sucos('Suco da fruta', 7)">
+        <img src="../img/menu-cardápio/suco da fruta.jpg" alt="Suco da Fruta" onclick="exibirImagem('../img/menu-cardápio/suco da fruta.jpg')">
+        <div>
+          <div class="h1_itens">Suco da Fruta - R$ 7</div><div class="h2_itens">400ml de Suco da fruta gelado escolha os sabores morango, kiwi ou laranja</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!----------- ---------------------- Fim do cardápio --------------------------------->
+<!-------------------------Inicio da Sacola--------------->
+  <div class="sacola">
+    <h2>Sacola</h2>
+    <ul id="itens-sacola"></ul>
+  </div>
+
+ <!--Botão fazer pedido-->
+  <div class="fazer-pedido">
+    <button onclick="fazerPedido()">Fazer Pedido</button>
+  </div>
+ <!--Botão fazer pedido-->
+  <div class="total" id="total"></div>
+
+  <div id="imagem-popup" onclick="fecharImagem()">
+    <img id="imagem-popup-img" src="" alt="">
+    <button id="imagem-popup-fechar" onclick="fecharImagem()">Fechar</button>
+  </div>
+<!-------------------------Fim da Sacola--------------->
+  <script src="script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js'></script>
+</body>
+</html>
