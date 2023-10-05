@@ -209,10 +209,17 @@ body {
     cursor: pointer;
 }
 
-.needhelp {
+.needhelp a{
     text-decoration: none;
     color: white;
     font-size: 15pt;
+}
+
+.needhelp {
+    margin-bottom: 10px;
+}
+.helpbox {
+    margin-bottom: 10px;
 }
 
 .wrapper-logo {

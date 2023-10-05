@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif ;
+}
+
+body{
+    width: 100; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0, 0, 0),white);
+    background-attachment: fixed; 
+    border-radius: 10rem; 
+    box-sizing: border-box;
+    box-shadow: #000000;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 1rem;
+}
+
+.form-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    padding: 15rem;
+    height: 80%;
+    border-radius: 1.5rem;
+}
+
+.form-image{
+    width: 34rem;
+    max-width: 100%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(94, 2, 2),white);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.form-header h1::after{
+    content: ''; 
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #351bc7;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.input-group {
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box textarea {
+    resize: none; 
+    margin: 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px;
+    width: 20rem;
+    height: 8rem;
+    text-align: justify;
+    text-align: center; 
+}
+
+.input-box textarea:hover {
+    background-color: #dbbcbc75;
+  }
+
+  .input-box textarea:focus-visible {
+    outline: none;
+    border-color: #6c63ff; 
+  }
+
+
+.input-box input {
+    margin: 1;
+    padding: 0.8rem 1.2rem;
+    border: #6c63ff;
+    border-radius: 10rem; 
+    box-shadow: 1px 1px 6px #0000001c; 
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #dbbcbc75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 25px; 
+}
+
+.gender-group {
+    margin-top: 0.5rem;
+}
+
+.button input[type="submit"] {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #ffffff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}

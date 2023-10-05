@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="../img/Nerd_Burguer_Logo.png" alt="imagem capa do formulario">
+        </div>
+
+        <div class="form">
+            <form class="contact-form" action="https://formsubmit.co/c26c09c7f4b1293174e188ba2443d530" method="POST"> <!--FONTES: https://formsubmit.co/documentation -->
+                <input type="hidden" name="_next" value="https://ednaldotaurino.github.io/form/obrigado.html"> <!--MUDAR AQUI COLOCAR O LINK NERDBURGER/FORM-->
+                <input type="hidden" name="_autoresponse" value="Recebemos seu contato, Retornaremos em breve obrigado.">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Formulário</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box" >
+                        <label for="firstname">Nome</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Digite seu nome" required> 
+                    </div> 
+
+                    <div class="input-box">
+                        <label for="Email">Email</label>
+                            <input type="email" name="email" placeholder="SeuEmail@gmail.com" required > 
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                            <input type="number" id="number" name="number" placeholder="(xx) xxxxx-xxxx" required> 
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Telefone</label>
+                            <input type="number" id="number" name="number" placeholder="(xx) xxxxx-xxxx" required> 
+                    </div>
+
+                    <div class="input-box" >
+                        <label for="mensagem">Digite uma mensagem</label>
+                            <textarea name="mensagem" maxlength="50" id="mensagem" cols="30" rows="10" placeholder="Máximo de 50 caracteres"></textarea>
+                    </div>
+
+                    <div class="options">
+                        <label>Qual setor deseja enviar este formulário?:</label>
+                            <select name="assunto" id="assunto" required>
+                                <option value="Elogios">Elogios</option>
+                                <option value="Duvida">Duvidas</option>
+                                <option value="Reclamação">Reclamações</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                    </div>
+
+                    <div class="chekbox">
+                        <input type="checkbox" value="Concordo com os termos" required> 
+                            <label for="termos">Concordo com os termos</label>
+                    </div>
+
+                    <div class="button">
+                        <label for="button"></label>
+                            <input type="submit"></input>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="Female" value="famele">
+                            <label for="famale">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other">Outros</label>
+                        </div>
+                    </div>
+                </div>
+            </form>  
+        </div>               
+    </div>
+</body>
+</html>
